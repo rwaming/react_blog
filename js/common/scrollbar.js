@@ -10,3 +10,4 @@ function addScript(feature) {
 
 // 공통 스크립트
 addScript('length_move');
+addScript('drag');
