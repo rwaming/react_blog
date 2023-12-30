@@ -1,30 +1,47 @@
-// 객체
-const html = document.documentElement;
-const body = document.body;
-const track = document.querySelector(".track");
-const thumb = document.querySelector(".thumb");
+//const
+// html, head, body, track, thumb
+//let
+// thumb_length, ratio
+//사용불가
+// newTrack, newThumb
 
-// 클릭한 위치 구하기 (track mousedown)
-// window 이동위치 구하기 (window mousemove)
-// 클릭위치 - 이동위치
-// 드래그 이벤트 끝내기 (window mouseup)
-// 모든 이벤트 삭제
+// 빈 변수
+let clickTop; // thumb top
+let clickY, moveY; // 커서
 
-let prevTop; // thumb top
-let prev, next; // 커서
+// 클릭하면, clickY, clickTop 얻기 실행
+track.addEventListener("mousedown", get_clickY);
 
-track.addEventListener("mousedown", getPrev); // 클릭하면 커서값 얻기
+// clickY, clickTop 얻기
+function get_clickY(e_track) {
+    clickTop = thumb.offsetTop; // 기존 top값
+    clickY = e_track.clientY; // clickY 커서값
 
-function getPrev(e_track) {
-    prevTop = parseInt(thumb.getAttribute("top")); // 기존 top값
-    prev = e_track.clientY; // 클릭시 커서값
-    window.addEventListener("mousemove", getNext); // 움직이면 커서값 얻기
+    window.addEventListener("mousemove", get_moveY); // 움직이면, moveY 얻기 실행
+    window.addEventListener("mouseup", drag_done); // 취소 대기 추가
 }
-function getNext(e_window) {
-    next = e_window.clientY; // next 반환
-    move();
+// moveY 얻기
+function get_moveY(e_window) {
+    moveY = e_window.clientY; // moveY 커서값
+    drag(); // 드래그
 }
-function move() {
-    const drag = next - prev; // 아래로 내리면 +, 올리면 -
-    thumb.style.top = prevTop + drag + "px"; // 기존 top 기준으로 이동
+// 드래그
+function drag() {
+    const distance = moveY - clickY; // 아래로 내리면 +, 올리면 -
+    if (clickTop + distance < 0) {
+        // 0보다 작으면
+        thumb.style.top = "0px";
+    } else if (html.clientHeight < clickTop + distance + thumb_length) {
+        // window보다 크면
+        thumb.style.top = html.clientHeight - thumb_length + "px";
+    } else {
+        // 문제 없을시
+        thumb.style.top = clickTop + distance + "px"; // 기존 top 기준으로 이동
+    }
+    window.scrollTo(window.scrollX, thumb.offsetTop / ratio); // thumb따라 페이지 이동
+}
+// 취소
+function drag_done() {
+    window.removeEventListener("mousemove", get_moveY); // moveY 얻기 삭제
+    window.removeEventListener("mouseup", drag_done); // 취소 대기 삭제
 }
