@@ -12,4 +12,4 @@ function add_common(feature) {
 }
 
 // common 하위 스크립트
-add_common("scrollbar"); // 스크롤바 기능
+add_common("1scrollbar"); // 스크롤바 기능

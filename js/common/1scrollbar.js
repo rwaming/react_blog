@@ -17,11 +17,12 @@ const thumb = document.querySelector(".thumb");
 // scrollbar 스크립트 생성기
 function add_scrollbar(feature) {
     const newScript = document.createElement('script');
-    newScript.src = 'js/common/scrollbar/'+feature+'.js';
+    newScript.src = 'js/common/1scrollbar/'+feature+'.js';
     newScript.defer = true;
     head.appendChild(newScript);
 }
 
 // scrollbar 하위 스크립트
-add_scrollbar('length_move'); // thumb 길이, 페이지위치에 따른 top번화
-add_scrollbar('drag');
+add_scrollbar('1length_move'); // thumb 길이, 페이지위치에 따른 top번화
+add_scrollbar('2drag'); // thumb 드래그 - thumb와 페이지 함께 이동
+add_scrollbar('3click'); // track 클릭 - thumb와 페이지 함께 이동   **만드는중
