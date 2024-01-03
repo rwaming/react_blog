@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// App도 일종의 component라고 볼 수 있음
 function App() {
   // useState(a) = [a, a edit용 함수] a에 여러 자료형 대입 가능
   const [title, titleEdit] = useState(['제목2', '제목1', '제목4', '제목3']);
@@ -49,6 +50,11 @@ function App() {
 }
 
 // component 만들기
+// (component 내 component 가능! 다만, 너무너무 많이 만들면 그것도 관리 힘듦..)
+// 보통 아래 것을 만듦
+// 반복되는 HTML태그 덩어리
+// 자주 변경되는 HTML UI들
+// 추가 페이지 만들때도 컴포넌트 사용
 function Modal() {
   return (
     <div className='modal'>
