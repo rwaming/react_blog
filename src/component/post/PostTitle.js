@@ -3,6 +3,6 @@ import React, { useState } from 'react';
 
 const postTitle = [];
 
-export default function PostTitle(i, location) {
-  return <h3 className={location}>{postTitle[i]}</h3>;
+export default function PostTitle(obj) {
+  return <h3 className={obj.location}>{postTitle[obj.i]}</h3>;
 }

@@ -3,6 +3,6 @@ import React, { useState } from 'react';
 
 const postDate = [];
 
-export default function PostDate(i, location) {
-  return <p className={location}>{postDate[i]}</p>;
+export default function PostDate(obj) {
+  return <p className={obj.location}>{postDate[obj.i]}</p>;
 }

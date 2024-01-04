@@ -3,6 +3,6 @@ import React, { useState } from 'react';
 
 const postLike = [];
 
-export default function PostLike(i, location) {
-  return <p className={location}>{postLike[i]}</p>;
+export default function PostLike(obj) {
+  return <p className={obj.location}>{postLike[obj.i]}</p>;
 }
