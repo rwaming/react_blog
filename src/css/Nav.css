@@ -1,7 +1,7 @@
 /* App.js */
-/* BlogNav.js */
+/* Nav.js */
 
-.blogNav {
+.Nav {
   display: flex;
   align-items: center;
   flex-basis: 80px;
@@ -12,14 +12,14 @@
   color: white;
 }
 
-.blogNavTitle {
+.NavTitle {
   display: flex;
   font-size: 20px;
   font-weight: 900;
   padding: 0 10px;
   text-align: center;
 }
-.blogNavCategory {
+.NavCategory {
   display: flex;
   font-size: 16px;
   font-weight: 500;
@@ -29,7 +29,9 @@
   * {
     flex: 1;
     padding: 0 30px;
+    cursor: pointer;
   }
 }
-.blogNavQuick {
+.NavQuick {
+  padding: 0 15px;
 }

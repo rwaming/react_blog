@@ -4,16 +4,16 @@ import logo from './logo.svg';
 import './App.css';
 
 // component
-import BlogNav from './BlogBody/BlogNav';
-import BlogBody from './BlogBody/BlogBody';
+import Nav from './App/Nav';
+import Body from './App/Body';
 
 /** {component} App @경로 App */
 export default function App() {
   // in index.html
   return (
     <div className='App'>
-      <BlogNav />
-      <BlogBody />
+      <Nav />
+      <Body />
     </div>
   );
 }
