@@ -1,0 +1,35 @@
+/* App.js */
+/* BlogNav.js */
+
+.blogNav {
+  display: flex;
+  align-items: center;
+  flex-basis: 80px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--deep);
+  color: white;
+}
+
+.blogNavTitle {
+  display: flex;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 0 10px;
+  text-align: center;
+}
+.blogNavCategory {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 30px;
+  text-align: center;
+
+  * {
+    flex: 1;
+    padding: 0 30px;
+  }
+}
+.blogNavQuick {
+}

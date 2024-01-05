@@ -1,44 +1,79 @@
-.App {
-  text-align: center;
+@charset "utf-8";
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 하위 CSS */
+@import url(./css/BlogNav.css);
+@import url(./css/BlogBody.css);
+
+/* JS용 */
+@import url(./css/scrollbar.css);
+
+/* 공통 */
+:root {
+  --txt: #333333;
+  --txtL: #666666;
+  --deep: #ea4e44;
+  --light: #ff9999;
+  --focus: #00aaaa;
+  --dim: #eebbb0;
+  --sub: #807777;
+  --border: #f1eaea;
+  --borderDeep: #dddddd;
+  --li_bg: #fbfafa;
+  --li_txt: #444444;
+  --code_bg: #333333;
+  --code_txt: white;
 }
 body {
-  font-family: 'nanumsquare';
+  font-family: 'Noto Sans KR', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2 {
+  letter-spacing: 1px;
 }
-
-.nav {
+.App {
   display: flex;
-  padding: 20px;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: black;
-  color: white;
-}
-.blog {
-  font-size: 20px;
-  font-weight: 600;
-}
-.list {
-  margin-top: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
-  text-align: left;
-}
-.post {
-  margin-top: 20px;
-  padding: 20px;
-  background: #eee;
+  height: 100%;
+  text-align: center;
 }
 
+/* JS로 등장 */
+@keyframes loadBG {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loadBG {
+  background-color: var(--deep);
+  animation: loadBG 0.4s forwards;
+}
+
+/* 잠깐 뺴놓음
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .App-header {
   display: flex;
   align-items: center;
@@ -49,16 +84,11 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+*/

@@ -1,0 +1,10 @@
+/* App.js */
+/* BlogBoby.js */
+
+/* 하위 CSS */
+@import url(./List.css);
+@import url(./Post.css);
+
+.blogBody > * {
+  transition: opacity 0.4s;
+}

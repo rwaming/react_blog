@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
-export default function List(obj) {
+/** {component} List @경로 App/BlogList/BlogPost */
+export default function BlogPost(obj) {
   return (
-    <div className='list'>
+    <div className='listEach'>
       <h3>
         {obj.title} {obj.like}
       </h3>
