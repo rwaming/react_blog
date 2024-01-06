@@ -5,6 +5,6 @@ import React, { useState } from 'react';
 
 /** {component} Blog @경로 App/Body/Blog */
 export default function Blog() {
-  // in Body.js
-  return <div className='blog'></div>;
+  // in div.body of App.js
+  return <div className='blog'>블로그</div>;
 }

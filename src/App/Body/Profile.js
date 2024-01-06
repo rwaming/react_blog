@@ -5,6 +5,6 @@ import React, { useState } from 'react';
 
 /** {component} Profile @경로 App/Body/Profile */
 export default function Profile() {
-  // in Body.js
-  return <div className='profile'></div>;
+  // in div.body of App.js
+  return <div className='profile'>프로필</div>;
 }

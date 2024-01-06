@@ -5,6 +5,6 @@ import React, { useState } from 'react';
 
 /** {component} Portfolio @경로 App/Body/Portfolio */
 export default function Portfolio() {
-  // in Body.js
-  return <div className='portfolio'></div>;
+  // in div.body of App.js
+  return <div className='portfolio'>포트폴리오</div>;
 }

@@ -1,10 +1,14 @@
 /* App.js */
-/* Boby.js */
+/* div.Boby */
 
 /* 하위 CSS */
 @import url(./List.css);
 @import url(./Post.css);
 
-.blogBody > * {
-  transition: opacity 0.4s;
+.body {
+  flex: 1;
+  display: flex;
+}
+.body > * {
+  width: 100%;
 }
