@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
-import BlogPost from './BlogPost';
+import BlogPost from './BlogList/BlogPost';
 
 /** {component} List @경로 App/BlogList */
 export default function BlogList(list) {

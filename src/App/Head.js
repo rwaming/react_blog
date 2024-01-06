@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 import iconInsta from '../img/icon/instagram.png';
 
 // component(Body)
-import Home from './Body/Home';
-import Profile from './Body/Profile';
-import Portfolio from './Body/Portfolio';
-import Blog from './Body/Blog';
+import Home from './Page/Home';
+import Profile from './Page/Profile';
+import Portfolio from './Page/Portfolio';
+import Blog from './Page/Blog';
 
 /** {component} Head @경로 App/Head */
 export default function Head({ giveProp }) {

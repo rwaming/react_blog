@@ -5,8 +5,9 @@ import logo from './logo.svg';
 import './App.css';
 
 // component
+import Scrollbar from './App/Scrollbar';
 import Head from './App/Head';
-import Home from './App/Body/Home';
+import Home from './App/Page/Home';
 
 /** {component} App - 항상 렌더링중 @경로 App */
 export default function App() {
@@ -16,7 +17,10 @@ export default function App() {
   return (
     <div className='App'>
       <Head giveProp={setHeadProps} />
-      <div className='body'>{headProps}</div>
+      <div className='page'>
+        {headProps}
+        <Scrollbar />
+      </div>
     </div>
   );
 }

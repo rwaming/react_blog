@@ -1,27 +1,24 @@
 @charset "utf-8";
-
-/* 스크롤바 삭제 1. fireFox, 나머지*/
-/*
-* {
-  scrollbar-width: none;
+.page {
+  display: flex;
 }
-*::-webkit-scrollbar {
-  display: none;
+.viewer {
+  flex: 1;
+  box-sizing: border-box;
 }
-*/
-
 .track {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 5px;
+  position: relative;
+  max-width: 5px;
+  min-width: 5px;
   height: 100%;
-  background-color: rebeccapurple;
+  background-color: var(--border);
 }
 .thumb {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
-  background-color: red;
+  height: 100px;
+  background-color: var(--deep);
 }

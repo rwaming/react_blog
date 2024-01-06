@@ -5,10 +5,13 @@
 @import url(./List.css);
 @import url(./Post.css);
 
-.body {
+.page {
+  position: relative;
   flex: 1;
   display: flex;
-}
-.body > * {
   width: 100%;
+}
+.page > * {
+  justify-content: stretch;
+  flex: 1;
 }

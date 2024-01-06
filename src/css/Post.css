@@ -5,18 +5,14 @@
   flex: 1;
   flex-direction: row;
 }
-.postEditor,
-.postViewer {
-  flex: 1;
-  padding: 50px;
-  box-sizing: border-box;
-}
 
 /* 에디터 */
 .postEditor {
   /* 에디터 | 뷰어 (나누는 선) */
   border-right: 1px solid var(--border);
   background-color: var(--editor_bg);
+  flex: 1;
+  box-sizing: border-box;
 
   h3:first-of-type {
     margin: 0;
