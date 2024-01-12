@@ -1,3 +1,3 @@
 # rwaming.github.io
 
-I'm making my blog while styding a lot of thing about frontend. :)
+I'm making my blog while studying a lot of thing about frontend. :)
