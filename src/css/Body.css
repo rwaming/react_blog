@@ -1,0 +1,17 @@
+/* App.js */
+/* div.Boby */
+
+/* 하위 CSS */
+@import url(./list.css);
+@import url(./post.css);
+
+.page {
+  position: relative;
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+.page > * {
+  justify-content: stretch;
+  flex: 1;
+}

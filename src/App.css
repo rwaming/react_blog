@@ -1,0 +1,327 @@
+@charset "utf-8";
+@import url('output.css');
+
+/* 하위 CSS */
+@import url(./css/head.css);
+@import url(./css/body.css);
+@import url(./css/scrollbar.css);
+
+/* 공통 */
+:root {
+  --bg: #ffffff;
+  --editor_bg: #fbfafa;
+  --txt: #333333;
+  --txtL: #666666;
+  --txtW: #ffffff;
+  --deep: #ea4e44;
+  --light: #ff9999;
+  --focus: #00aaaa;
+  --dim: #eebbb0;
+  --sub: #807777;
+  --border: #f1eaea;
+  --borderDeep: #dddddd;
+  --li_bg: #fbfafa;
+  --li_txt: #444444;
+  --code_bg: #333333;
+  --code_txt: #ffffff;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.page {
+  .title {
+    padding: 40px 40px 30px 40px;
+  }
+  /* 서론,콜아웃 */
+  blockquote {
+    margin: 0;
+    padding: 5px 20px;
+    border-left: 4px solid var(--light);
+    box-shadow: inset 0 0 0 1px var(--border);
+    border-radius: 0px;
+  }
+  blockquote p {
+    color: var(--deep);
+  }
+  .intro p {
+    color: var(--deep);
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75em;
+    color: var(--txt);
+  }
+  .subtitle {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    color: var(--sub);
+  }
+  hr {
+    margin: 60px auto 30px auto;
+    border: none;
+    width: 50%;
+    height: 1px;
+    background: var(--borderDeep);
+  }
+  .titleLine {
+    margin: 0 auto 60px auto;
+    width: 100%;
+    height: 2px;
+    background-color: var(--deep);
+  }
+  .content {
+    /* div.title 아래부터 footer 위 사이 */
+    margin: 20px 70px;
+  }
+  a {
+    margin-right: 5px;
+    color: var(--focus);
+    text-decoration: none;
+    transition: opacity 0s !important;
+    cursor: pointer;
+  }
+  a:hover {
+    transition: opacity 0s !important;
+    opacity: 0.8 !important;
+  }
+  small {
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--txtL);
+  }
+  i {
+    opacity: 0.8;
+  }
+  img {
+    border: 1px solid var(--border);
+  }
+  input,
+  textarea {
+    padding: 2px 5px;
+    border: 1px solid var(--borderDeep);
+    outline: none;
+    color: var(--txt);
+    resize: none;
+  }
+  input:focus,
+  textarea:focus {
+    border: 1px solid var(--focus);
+  }
+  /* 리스트 */
+  ol,
+  ul {
+    padding: 10px 30px 20px 30px;
+    border: 1px solid var(--border);
+    background-color: var(--li_bg);
+  }
+  li {
+    margin: 10px auto 10px auto;
+    width: fit-content;
+    line-height: 1.75em;
+    color: var(--li_txt);
+    list-style: none;
+  }
+  ol ol {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+  }
+
+  /* 목차 */
+  .order {
+    margin-bottom: 60px;
+  }
+  .order a {
+    color: var(--li_txt);
+  }
+  .orderTitle {
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--deep);
+    letter-spacing: 1px;
+  }
+  .order li {
+    margin: auto;
+    width: fit-content;
+    color: var(--li_txt);
+    list-style: none;
+  }
+  .order ol {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+  }
+  .order li li {
+    margin: 10px 0 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .order li li li {
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+  /* quick 목차 */
+  .quick {
+    margin: 0;
+    padding: 5px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: var(--deep);
+    opacity: 0.8;
+  }
+  .quick li {
+    margin: 0;
+    padding: 0;
+    color: white;
+    opacity: 1;
+  }
+  .quick li > * {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    font-size: 0px;
+    color: white;
+    transition: none;
+    opacity: 0;
+  }
+  .quick .orderTitle {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    transition: opacity 0.3s 0.1s;
+    opacity: 1;
+  }
+  .quick ol {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+  .quick:hover {
+    padding: 10px 5px 13px 5px;
+    min-width: 40px;
+    transition: all 0.3s;
+    opacity: 1;
+  }
+  .quick:hover * {
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    transition:
+      all 0.5s,
+      opacity 0.3s 0.4s;
+    opacity: 1;
+  }
+  .quick:hover .orderTitle {
+    height: 33px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    transition: opacity 0.3s 0.1s;
+    opacity: 1;
+  }
+  .quick:hover ol li {
+    margin: 10px 20px 15px 20px;
+  }
+  .quick:hover ol ol li {
+    margin-bottom: 0px;
+  }
+  /* body */
+  .body {
+    text-align: left;
+  }
+  /* 작은 코드 */
+  code {
+    margin: 0 4px;
+    padding: 4px 7px;
+    background-color: var(--code_bg);
+    font-size: 12px;
+    color: var(--code_txt);
+  }
+  code i {
+    /* 사바사 코드 */
+    opacity: 0.5;
+  }
+  /* 큰 코드 */
+  pre {
+    margin: 0 10px;
+    padding: 10px 20px 0 20px;
+    background-color: var(--code_bg);
+  }
+  pre code {
+    background-color: transparent;
+    line-height: 2em;
+    color: var(--code_txt);
+  }
+
+  /* 주석 */
+  .foot {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 12px;
+    font-weight: 900;
+    color: var();
+  }
+  .footLine {
+    margin: 60px 0 50px 0;
+    width: 100%;
+    background-color: var(--dim);
+  }
+  footer p {
+    margin: 0;
+    color: var(--txtL);
+  }
+  footer a {
+    font-weight: 700;
+  }
+}
+
+/* 잠깐 뺴놓음
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-link {
+  color: #61dafb;
+}
+*/
