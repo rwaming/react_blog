@@ -2,9 +2,9 @@
 @import url('output.css');
 
 /* 하위 CSS */
-@import url(./css/Head.css);
-@import url(./css/Body.css);
-@import url(./css/Scrollbar.css);
+@import url(./css/head.css);
+@import url(./css/body.css);
+@import url(./css/scrollbar.css);
 
 /* 공통 */
 :root {

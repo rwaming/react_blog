@@ -2,8 +2,8 @@
 /* div.Boby */
 
 /* 하위 CSS */
-@import url(./List.css);
-@import url(./Post.css);
+@import url(./list.css);
+@import url(./post.css);
 
 .page {
   position: relative;
