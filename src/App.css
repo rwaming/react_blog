@@ -6,6 +6,26 @@
 @import url(./css/body.css);
 @import url(./css/scrollbar.css);
 
+/*
+CSS Block Element Modifier 컨벤션
+참고 용례
+
+<form class="search-form">
+  <div class="search-form__content">
+    <input class="search-form__input">
+    <button class="search-form__button">Search</button>
+  </div>
+</form>
+<!-- 이렇게 다른 Element의 Element로는 사용하면 안 됩니다. -->
+<form class="search-form">
+  <div class="search-form__content">
+    <input class="search-form__content__input">
+    <button class="search-form__content__button">Search</button>
+  </div>
+</form>
+
+*/
+
 /* 공통 */
 :root {
   --bg: #ffffff;
