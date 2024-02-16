@@ -1,10 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
-// component
-
-// output
-export default function BlogPostWriter(post) {
+/** Component */
+export default function BlogPostEditor(post) {
   return (
     <div className='flexWrap'>
       <div className='postEditor'>

@@ -4,18 +4,17 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import iconInsta from '../img/icon/instagram.png';
 
-// component(Body)
-import Home from './Page/Home';
-import Profile from './Page/Profile';
-import Portfolio from './Page/Portfolio';
-import Blog from './Page/Blog';
+// component
+import Home from './Home';
+import Profile from './Profile/Profile';
+import Portfolio from './Portfolio/Portfolio';
+import Blog from './Blog/Blog';
 
-/** {component} Head @경로 App/Head */
+/** Component */
 export default function Head({ giveProp }) {
   Head.propTypes = {
     giveProp: PropTypes.any.isRequired,
   };
-  // in App.js
   return (
     <header>
       <h1

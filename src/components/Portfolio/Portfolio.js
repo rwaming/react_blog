@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
-/** {component} Portfolio @경로 App/Body/Portfolio */
+/** Component */
 export default function Portfolio() {
-  // in div.body of App.js
   return (
     <div className='portfolio'>
       <div className='viewer'>

@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
-/** {component} Blog @경로 App/Body/Blog */
+/** Component */
 export default function Blog() {
-  // in div.body of App.js
   return (
     <div className='blog'>
       <div className='viewer'>

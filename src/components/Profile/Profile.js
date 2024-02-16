@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
-/** {component} Profile @경로 App/Body/Profile */
+/** Component */
 export default function Profile() {
-  // in div.body of App.js
   return (
     <div className='profile'>
       <div className='viewer'>
