@@ -1,13 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-use-before-define */
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 
 // component
-import Scrollbar from './App/Scrollbar';
-import Head from './App/Head';
-import Home from './App/Page/Home';
+import Scrollbar from './components/Scrollbar';
+import Head from './components/Head';
+import Home from './components/Home';
 
 /** {component} App - 항상 렌더링중 @경로 App */
 export default function App() {
@@ -17,7 +16,7 @@ export default function App() {
   return (
     <div className='App'>
       <Head giveProp={setHeadProps} />
-      <div className='page'>
+      <div className='body'>
         {headProps}
         <Scrollbar />
       </div>

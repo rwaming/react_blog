@@ -1,61 +1,14 @@
-@charset "utf-8";
-@import url('output.css');
+/* App/body */
+/* 하위 */
+@import url(body/blog.css);
+@import url(body/blogEdit.css);
 
-/* 하위 CSS */
-@import url(./css/head.css);
-@import url(./css/body.css);
-@import url(./css/scrollbar.css);
-
-/*
-CSS Block Element Modifier 컨벤션
-참고 용례
-
-<form class="search-form">
-  <div class="search-form__content">
-    <input class="search-form__input">
-    <button class="search-form__button">Search</button>
-  </div>
-</form>
-<!-- 이렇게 다른 Element의 Element로는 사용하면 안 됩니다. -->
-<form class="search-form">
-  <div class="search-form__content">
-    <input class="search-form__content__input">
-    <button class="search-form__content__button">Search</button>
-  </div>
-</form>
-
-*/
-
-/* 공통 */
-:root {
-  --bg: #ffffff;
-  --editor_bg: #fbfafa;
-  --txt: #333333;
-  --txtL: #666666;
-  --txtW: #ffffff;
-  --deep: #ea4e44;
-  --light: #ff9999;
-  --focus: #00aaaa;
-  --dim: #eebbb0;
-  --sub: #807777;
-  --border: #f1eaea;
-  --borderDeep: #dddddd;
-  --li_bg: #fbfafa;
-  --li_txt: #444444;
-  --code_bg: #333333;
-  --code_txt: #ffffff;
-}
-.App {
+.body {
+  position: relative;
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  text-align: center;
-}
-.page {
+
   .title {
     padding: 40px 40px 30px 40px;
   }
@@ -313,35 +266,7 @@ CSS Block Element Modifier 컨벤션
   }
 }
 
-/* 잠깐 뺴놓음
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body > * {
+  justify-content: stretch;
+  flex: 1;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.App-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #282c34;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-.App-link {
-  color: #61dafb;
-}
-*/

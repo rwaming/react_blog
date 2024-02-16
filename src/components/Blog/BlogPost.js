@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
-/** {component} List @경로 App/BlogList/BlogPost */
+/** Component */
 export default function BlogPost(obj) {
   return (
     <div className='listEach'>
