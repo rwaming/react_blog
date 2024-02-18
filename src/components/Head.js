@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import iconInsta from '../img/icon/instagram.png';
 
-// component
+// sub - component
 import Home from './Home';
 import Profile from './Profile/Profile';
 import Portfolio from './Portfolio/Portfolio';
