@@ -8,10 +8,8 @@ import Scroll from '../Scroll';
 export default function Blog() {
   return (
     <div className='blog'>
-      <div className='viewer'>
-        <p>블로그 리스트 만드는 중~!</p>
-        <Scroll />
-      </div>
+      <p>블로그 리스트 만드는 중~!</p>
+      <Scroll />
     </div>
   );
 }
