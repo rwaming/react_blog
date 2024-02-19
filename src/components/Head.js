@@ -1,57 +1,76 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-use-before-define */
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import iconInsta from '../img/icon/instagram.png';
 
-// sub - component
-import Home from './Home';
+import Home from './Home/Home';
 import Profile from './Profile/Profile';
 import Portfolio from './Portfolio/Portfolio';
 import Blog from './Blog/Blog';
 
-/** Component */
-export default function Head({ giveProp }) {
-  Head.propTypes = {
-    giveProp: PropTypes.any.isRequired,
-  };
+import iconInsta from '../assets/img/icon_instagram.png';
+import iconNaver from '../assets/img/icon_naver.png';
+
+/** Component
+ * @property {function} setBody Change body, a head btn clicked.
+ */
+export default function Head(props) {
+  const { setBody } = props;
   return (
     <header>
       <h1
-        className='homeBtn'
+        className='home-btn'
         onClick={() => {
-          giveProp(<Home />);
+          setBody(<Home />);
         }}>
         RWAMing
       </h1>
-      <nav>
-        <p
-          className='profileBtn'
-          onClick={() => {
-            giveProp(<Profile />);
-          }}>
-          Profile
-        </p>
-        <p
-          className='portfolioBtn'
-          onClick={() => {
-            giveProp(<Portfolio />);
-          }}>
-          Portfolio
-        </p>
-        <p
-          className='blogBtn'
-          onClick={() => {
-            giveProp(<Blog />);
-          }}>
-          Blog
-        </p>
+      <nav className='menu'>
+        <ul>
+          <li>
+            <button
+              type='button'
+              className='profile menu-btn'
+              onClick={() => {
+                setBody(<Profile />);
+              }}>
+              Profile
+            </button>
+          </li>
+          <li>
+            <button
+              type='button'
+              className='portfolio menu-btn'
+              onClick={() => {
+                setBody(<Portfolio />);
+              }}>
+              Portfolio
+            </button>
+          </li>
+          <li>
+            <button
+              type='button'
+              className='blog menu-btn'
+              onClick={() => {
+                setBody(<Blog />);
+              }}>
+              Blog
+            </button>
+          </li>
+        </ul>
       </nav>
-      <div className='headQuick'>
+      <div className='quick'>
         <a
+          className='quick-btn'
           href='https://www.instagram.com/art.rwam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
           target='_blink'>
           <img src={iconInsta} width='30px' height='30px' />
+        </a>
+        <a
+          className='quick-btn'
+          href='https://blog.naver.com/rwaming'
+          target='_blink'>
+          <img src={iconNaver} width='30px' height='28px' />
         </a>
       </div>
     </header>

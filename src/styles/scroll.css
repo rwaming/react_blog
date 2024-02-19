@@ -1,25 +1,26 @@
 /* App/scroll */
 
-.editor {
+.body > div {
   display: flex;
-}
-.viewer {
   flex: 1;
+  flex-direction: column;
   box-sizing: border-box;
 }
 .track {
-  position: relative;
-  max-width: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
   min-width: 5px;
+  max-width: 5px;
   height: 100%;
   background-color: var(--border);
 }
 .thumb {
-  box-sizing: border-box;
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 100px;
   background-color: var(--deep);
+  box-sizing: border-box;
 }

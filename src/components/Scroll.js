@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 
 /** Component */
-export default function Scrollbar() {
+export default function Scroll() {
   return (
     <div className='track'>
       <div className='thumb'></div>

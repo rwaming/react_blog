@@ -9,11 +9,14 @@
   display: flex;
   width: 100%;
 
+  /* === Post Style ===*/
+  /* Title Wrap */
   .title {
+    /* 제목 */
     padding: 40px 40px 30px 40px;
   }
-  /* 서론,콜아웃 */
   blockquote {
+    /* 서론, 콜아웃 */
     margin: 0;
     padding: 5px 20px;
     border-left: 4px solid var(--light);
@@ -24,15 +27,17 @@
     color: var(--deep);
   }
   .intro p {
+    /* 서론만 */
     color: var(--deep);
   }
   p {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.75em;
-    color: var(--txt);
+    color: var(--text);
   }
   .subtitle {
+    /* 소제목 */
     margin: 0 0 20px 0;
     font-size: 20px;
     color: var(--sub);
@@ -42,16 +47,17 @@
     border: none;
     width: 50%;
     height: 1px;
-    background: var(--borderDeep);
+    background: var(--border-deep);
   }
-  .titleLine {
+  .title-line {
+    /* 제목 구분선 */
     margin: 0 auto 60px auto;
     width: 100%;
     height: 2px;
     background-color: var(--deep);
   }
+  /* Content Wrap */
   .content {
-    /* div.title 아래부터 footer 위 사이 */
     margin: 20px 70px;
   }
   a {
@@ -69,7 +75,7 @@
     padding-left: 5px;
     font-size: 14px;
     font-weight: normal;
-    color: var(--txtL);
+    color: var(--text-dim);
   }
   i {
     opacity: 0.8;
@@ -80,9 +86,9 @@
   input,
   textarea {
     padding: 2px 5px;
-    border: 1px solid var(--borderDeep);
+    border: 1px solid var(--border-deep);
     outline: none;
-    color: var(--txt);
+    color: var(--text);
     resize: none;
   }
   input:focus,
@@ -94,13 +100,13 @@
   ul {
     padding: 10px 30px 20px 30px;
     border: 1px solid var(--border);
-    background-color: var(--li_bg);
+    background-color: var(--li-bg);
   }
   li {
     margin: 10px auto 10px auto;
     width: fit-content;
     line-height: 1.75em;
-    color: var(--li_txt);
+    color: var(--li-text);
     list-style: none;
   }
   ol ol {
@@ -114,9 +120,9 @@
     margin-bottom: 60px;
   }
   .order a {
-    color: var(--li_txt);
+    color: var(--li-text);
   }
-  .orderTitle {
+  .order-title {
     margin: 20px auto;
     font-size: 20px;
     font-weight: bold;
@@ -126,7 +132,7 @@
   .order li {
     margin: auto;
     width: fit-content;
-    color: var(--li_txt);
+    color: var(--li-text);
     list-style: none;
   }
   .order ol {
@@ -143,6 +149,7 @@
     margin-bottom: 5px;
     font-weight: normal;
   }
+
   /* quick 목차 */
   .quick {
     margin: 0;
@@ -170,7 +177,7 @@
     transition: none;
     opacity: 0;
   }
-  .quick .orderTitle {
+  .quick .order-title {
     width: 40px;
     height: 40px;
     font-size: 12px;
@@ -201,7 +208,7 @@
       opacity 0.3s 0.4s;
     opacity: 1;
   }
-  .quick:hover .orderTitle {
+  .quick:hover .order-title {
     height: 33px;
     font-size: 12px;
     font-weight: bold;
@@ -217,16 +224,16 @@
     margin-bottom: 0px;
   }
   /* body */
-  .body {
+  .content-body {
     text-align: left;
   }
   /* 작은 코드 */
   code {
     margin: 0 4px;
     padding: 4px 7px;
-    background-color: var(--code_bg);
+    background-color: var(--code-bg);
     font-size: 12px;
-    color: var(--code_txt);
+    color: var(--code-text);
   }
   code i {
     /* 사바사 코드 */
@@ -236,12 +243,12 @@
   pre {
     margin: 0 10px;
     padding: 10px 20px 0 20px;
-    background-color: var(--code_bg);
+    background-color: var(--code-bg);
   }
   pre code {
     background-color: transparent;
     line-height: 2em;
-    color: var(--code_txt);
+    color: var(--code-text);
   }
 
   /* 주석 */
@@ -252,14 +259,14 @@
     font-weight: 900;
     color: var();
   }
-  .footLine {
+  .foot-line {
     margin: 60px 0 50px 0;
     width: 100%;
     background-color: var(--dim);
   }
   footer p {
     margin: 0;
-    color: var(--txtL);
+    color: var(--text-dim);
   }
   footer a {
     font-weight: 700;

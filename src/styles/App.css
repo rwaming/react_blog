@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 /* 하위 */
-@import url(body.css);
 @import url(head.css);
+@import url(body.css);
 @import url(scroll.css);
 @import url(tailwind.css);
 
@@ -27,24 +27,6 @@ CSS Block Element Modifier 컨벤션
 */
 
 /* 공통 */
-:root {
-  --bg: #ffffff;
-  --editor_bg: #fbfafa;
-  --txt: #333333;
-  --txtL: #666666;
-  --txtW: #ffffff;
-  --deep: #ea4e44;
-  --light: #ff9999;
-  --focus: #00aaaa;
-  --dim: #eebbb0;
-  --sub: #807777;
-  --border: #f1eaea;
-  --borderDeep: #dddddd;
-  --li_bg: #fbfafa;
-  --li_txt: #444444;
-  --code_bg: #333333;
-  --code_txt: #ffffff;
-}
 
 .App {
   display: flex;
@@ -56,36 +38,3 @@ CSS Block Element Modifier 컨벤션
   height: 100%;
   text-align: center;
 }
-
-/* 잠깐 뺴놓음
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.App-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #282c34;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-.App-link {
-  color: #61dafb;
-}
-*/
