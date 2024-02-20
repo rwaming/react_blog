@@ -5,10 +5,11 @@ import './styles/App.css';
 
 // components
 import Head from './components/Head';
+import Home from './components/Home/Home';
 
 /** {component} App - 항상 렌더링중 @경로 App */
 export default function App() {
-  const [body, setBody] = useState();
+  const [body, setBody] = useState(<Home />);
 
   // in index.html
   return (
