@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /* 하위 */
+@import url(tailwind.css);
 @import url(head.css);
 @import url(body.css);
 @import url(scroll.css);
-@import url(tailwind.css);
 
 /*
 CSS Block Element Modifier 컨벤션
