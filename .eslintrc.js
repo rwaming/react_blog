@@ -28,5 +28,11 @@ module.exports = {
     'no-unused-vars': 'warn', // 사용되지 않은 변수 경고
     'object-curly-spacing': ['warn', 'always'], // 중괄호 주위 공백
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }], // .js파일에서 jsx가능하게
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: ['/*.test.js', '/*.spec.js', 'postcss.config.js'],
+      },
+    ],
   },
 };
