@@ -31,7 +31,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: ['/*.test.js', '/*.spec.js', 'postcss.config.js'],
+        devDependencies: ['/*.test.js', '/*.spec.js', 'postcss.config.js'], // postcss 플러그인들을 devDependencies로 간주
       },
     ],
   },
