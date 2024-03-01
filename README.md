@@ -1,3 +1,3 @@
-# rwaming.github.io
+# RWAMIN
 
-I'm making my blog while studying a lot of thing about frontend. :)
+This is for my portfolio that shows my features.
