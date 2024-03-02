@@ -1,0 +1,13 @@
+/* 프레임 확인용 임시 설정임 */
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+.dark {
+  background: black;
+  color: white;
+}
+.light {
+  background: white;
+  color: black;
+}
