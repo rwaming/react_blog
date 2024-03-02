@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@charset "UTF-8";
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+/*
+  font-family: "Noto Serif KR", serif;
+  font-style: normal;
+*/
+@font-face {
+  font-family: 'Rosalia';
+  src: url(./assets/fonts/Rosalia.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Classy Vogue';
+  src: url(./assets/fonts/Classyvogueregular.ttf) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* 'CSS 리셋' 검색해서 나머지 진행하기 */
