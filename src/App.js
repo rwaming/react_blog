@@ -1,6 +1,6 @@
 import './App.css';
 
 function App() {
-  return <div className='App dark'>App Dark</div>;
+  return <div className='dark'>dark</div>;
 }
 export default App;

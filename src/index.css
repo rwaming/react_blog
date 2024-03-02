@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* reset */
+@import url(./reset.css);
+
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 /*
@@ -14,5 +17,3 @@
   font-family: 'Classy Vogue';
   src: url(./assets/fonts/Classyvogueregular.ttf) format('truetype');
 }
-
-/* 'CSS 리셋' 검색해서 나머지 진행하기 */
