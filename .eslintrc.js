@@ -27,8 +27,8 @@ module.exports = {
     'jsx-quotes': ['error', 'prefer-single'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'max-depth': ['error', 2],
-    'max-lines-per-function': ['error', { max: 10 }],
     'max-params': ['error', 3],
     'no-console': 'off',
+    'object-curly-newline': 'off',
   },
 };
