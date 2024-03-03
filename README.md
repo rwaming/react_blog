@@ -6,6 +6,8 @@ This is for my portfolio that shows my features.
 
 ### Close - #21
 
+> Practice close issuses.
+
 ### Close - #22
 
 > Fix nested CSS error when React rendered
