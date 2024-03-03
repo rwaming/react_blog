@@ -1,6 +1,7 @@
 import './App.css';
 import Load from './components/Load';
 import Header from './components/Header';
+import Content from './components/Content';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -9,7 +10,7 @@ export default function App() {
       <Load />
       <div className='body'>
         <Header />
-        <main className='feed'>feed</main>
+        <Content />
         <Footer />
       </div>
     </div>

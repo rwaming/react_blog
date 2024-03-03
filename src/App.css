@@ -18,13 +18,14 @@
   color: rgba(var(--rgb1-dark), 0.9);
 }
 
-/* home */
+/* app */
 .app {
   width: 100vw;
   height: 100vh;
 }
 .load {
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -35,14 +36,21 @@
     rgba(var(--rgb5-light), 0) 50%
   );
 }
-.body {
-  display: flex;
-  flex-direction: column;
 
-  .header {
-    background: rgba(var(--rgb5-light), 0.2);
-  }
+/* body */
+.body {
+  width: 100vw;
+  height: 100vh;
 }
-.feed {
-  backdrop-filter: blur(100px);
+
+.header {
+  position: fixed;
+  background: rgba(var(--rgb5-light), 0.2);
+}
+.content {
+  background: rgba(var(--rgb0-black), 1);
+}
+.footer {
+  display: block;
+  background: rgba(var(--rgb2-deep), 1);
 }
