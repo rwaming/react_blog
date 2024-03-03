@@ -1,20 +1,20 @@
 :root {
-  --rgb-dark: 29, 35, 59;
-  --rgb-deep: 79, 108, 115;
-  --rgb-dim: 111, 143, 131;
-  --rgb-bright: 187, 141, 116;
-  --rgb-pale: 237, 225, 210;
-  --rgb-light: 255, 255, 255;
+  --rgb-1dark: 29, 35, 59;
+  --rgb-2deep: 79, 108, 115;
+  --rgb-3dim: 111, 143, 131;
+  --rgb-4bright: 187, 141, 116;
+  --rgb-5pale: 237, 225, 210;
+  --rgb-6light: 255, 255, 255;
 }
 
 /* mode */
 .dark {
-  background: var(--dark);
-  color: white;
+  background: rgba(var(--rgb-1dark), 1);
+  color: rgba(var(--rgb-6light), 0.9);
 }
 .light {
-  background: white;
-  color: var(--dark);
+  background: rgba(var(--rgb-6light), 1);
+  color: rgba(var(--rgb-1dark), 0.9);
 }
 
 /* home */
@@ -30,8 +30,8 @@
   width: 100vw;
   height: 100vh;
   background: radial-gradient(
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(var(--rgb-5pale), 0.2) 0%,
+    rgba(var(--rgb-5pale), 0) 50%
   );
 }
 .body {
@@ -39,7 +39,7 @@
   flex-direction: column;
 
   .header {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(var(--rgb-5pale), 0.2);
   }
 }
 .feed {
