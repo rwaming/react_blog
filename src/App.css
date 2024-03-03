@@ -1,13 +1,28 @@
-/* 프레임 확인용 임시 설정임 */
-.app {
-  width: 100vw;
-  height: 100vh;
+:root {
+  --dark: black;
 }
+
 .dark {
-  background: black;
+  background: var(--dark);
   color: white;
 }
 .light {
   background: white;
   color: black;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(255, 255, 255, 0.1);
+  }
 }
