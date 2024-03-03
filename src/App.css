@@ -2,6 +2,7 @@
   --dark: black;
 }
 
+/* mode */
 .dark {
   background: var(--dark);
   color: white;
@@ -11,18 +12,28 @@
   color: black;
 }
 
+/* home */
 .app {
   width: 100vw;
   height: 100vh;
+}
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 .body {
   display: flex;
   flex-direction: column;
 
   .header {
-    width: 100vw;
-    height: 100vh;
-
     background: rgba(255, 255, 255, 0.1);
   }
 }
