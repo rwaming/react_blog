@@ -30,4 +30,4 @@ This is for my portfolio that shows my features.
 3. **Remove 'tailwind.config.js'**
    No error
 
-This error must occur if 'tailwind.config.js' exist in project directory.
+This error must occur when 'tailwind.config.js' exist in project directory.
