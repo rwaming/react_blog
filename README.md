@@ -9,7 +9,10 @@ This is for my portfolio that shows my features.
 > Practice close issuses
 
 - **close #21 #22**
-  Only #21 close
+  Only #21 closed
+
+- **close #22**
+  #22 closed
 
 ### Close - #22
 
