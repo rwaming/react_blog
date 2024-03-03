@@ -1,10 +1,20 @@
-# RWAMIN
+# RWAMING
 
 This is for my portfolio that shows my features.
 
-# Issues
+---
 
-### Close - #21
+## Issues
+
+### [24. 03. 03. sun]
+
+#### Close - #11
+
+> Basic First Markup
+
+App > Load + (Body > Header + Content + Footer)
+
+#### Close - #21
 
 > Practice close issuses
 
@@ -17,7 +27,7 @@ This is for my portfolio that shows my features.
   But, I can't sure that this way close only one issue.
   The issue #22 don't show a commit 'close #22', though it closed.
 
-### Close - #22
+#### Close - #22
 
 > Fix nested CSS error when React rendered
 
