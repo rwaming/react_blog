@@ -7,9 +7,11 @@ export default function App() {
   return (
     <div className='app dark'>
       <Load />
-      <Header />
-      <main>content</main>
-      <Footer />
+      <div className='body'>
+        <Header />
+        <main>content</main>
+        <Footer />
+      </div>
     </div>
   );
 }
