@@ -8,6 +8,13 @@
   --rgb6-white: 255, 255, 255;
 }
 
+/* no-scrollbar */
+/* Feed에서만 scroll-width 필요함 */
+* {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
 /* mode */
 .dark {
   background: rgba(var(--rgb1-dark), 1);
@@ -24,17 +31,15 @@
   height: 100vh;
 }
 .load {
-  /* display: flex; */
-  display: none;
-  align-items: center;
-  justify-content: center;
   position: fixed;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   background: radial-gradient(
-    rgba(var(--rgb5-light), 0.2) 0%,
-    rgba(var(--rgb5-light), 0) 50%
-  );
+      rgba(var(--rgb5-light), 0.2) 0%,
+      rgba(var(--rgb5-light), 0) 50%
+    ),
+    rgba(var(--rgb1-dark), 1);
 }
 
 /* body */
