@@ -6,7 +6,10 @@ This is for my portfolio that shows my features.
 
 ### Close - #21
 
-> Practice close issuses.
+> Practice close issuses
+
+- **close #21 #22**
+  Only #21 close
 
 ### Close - #22
 
