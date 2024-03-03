@@ -14,6 +14,12 @@ This is for my portfolio that shows my features.
 
 App > Load + (Body > Header + Content + Footer)
 
+#### Close - #20
+
+> Make CSS class using BEM
+
+I started to use BEM, so jsut close #20.
+
 #### Close - #21
 
 > Practice close issuses
