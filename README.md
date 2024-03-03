@@ -14,6 +14,9 @@ This is for my portfolio that shows my features.
 - **close #22**
   #22 closed
 
+  But, I can't sure that this way close only one issue.
+  The issue #22 don't show a commit 'close #22', though it closed.
+
 ### Close - #22
 
 > Fix nested CSS error when React rendered
