@@ -2,7 +2,11 @@
 
 This is for my portfolio that shows my features.
 
-# Close - #22
+# Issues
+
+### Close - #21
+
+### Close - #22
 
 > Fix nested CSS error when React rendered
 
