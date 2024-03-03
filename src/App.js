@@ -9,7 +9,7 @@ export default function App() {
       <Load />
       <div className='body'>
         <Header />
-        <main>content</main>
+        <main className='feed'>feed</main>
         <Footer />
       </div>
     </div>
