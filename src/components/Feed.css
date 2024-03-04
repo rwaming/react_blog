@@ -1,6 +1,0 @@
-.feed {
-  display: flex;
-  width: 1000;
-  flex-shrink: 1;
-  backdrop-filter: blur(50px);
-}
