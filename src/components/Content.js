@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import './Content.css';
 
-import FrontPage from './contents/FrontPage';
-import BackPage from './contents/BackPage';
+import FrontPage from './FrontPage';
+import BackPage from './BackPage';
 
-import isUp from './contents/pageScroll';
+import isUp from './pageScroll';
 
 export default function Content() {
   // move by scroll
