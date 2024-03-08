@@ -1,0 +1,50 @@
+:root {
+  --rgb0-black: 0, 0, 0;
+  --rgb1-dark: 29, 35, 59;
+  --rgb2-deep: 79, 108, 115;
+  --rgb3-dim: 111, 143, 131;
+  --rgb4-bright: 187, 141, 116;
+  --rgb5-light: 237, 225, 210;
+  --rgb6-white: 255, 255, 255;
+}
+
+/* no-scrollbar */
+/* Feed에서만 scroll-width 필요함 */
+* {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+/* mode */
+.dark {
+  background: rgba(var(--rgb1-dark), 1);
+  color: rgba(var(--rgb6-white), 0.9);
+}
+.light {
+  background: rgba(var(--rgb6-white), 1);
+  color: rgba(var(--rgb1-dark), 0.9);
+}
+
+/* app */
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* body */
+.body {
+  width: 100vw;
+  height: 100vh;
+
+  .header {
+    position: fixed;
+    background: rgba(var(--rgb5-light), 0.2);
+  }
+  .content {
+    background: rgba(var(--rgb0-black), 1);
+  }
+  .footer {
+    display: block;
+    background: rgba(var(--rgb2-deep), 1);
+  }
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* reset */
+@import url(./reset.css);
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+/*
+  font-family: "Noto Serif KR", serif;
+  font-style: normal;
+*/
+@font-face {
+  font-family: 'Rosalia';
+  src: url(./assets/fonts/Rosalia.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Classy Vogue';
+  src: url(./assets/fonts/Classyvogueregular.ttf) format('truetype');
+}
