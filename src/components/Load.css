@@ -1,0 +1,17 @@
+.load {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+      rgba(var(--rgb5-light), 0.2) 0%,
+      rgba(var(--rgb5-light), 0) 50%
+    ),
+    rgba(var(--rgb1-dark), 1);
+
+  &__bg-film {
+    background: rgba(var(--rgb0-black), 1);
+    mix-blend-mode: exclusion;
+    filter: contrast(200%);
+  }
+}
