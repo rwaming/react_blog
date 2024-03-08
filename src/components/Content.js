@@ -1,22 +1,36 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './Content.css';
 
+import FrontPage from './FrontPage';
+import BackPage from './BackPage';
+
+import isUp from './pageScroll';
+
 export default function Content() {
-  function toFeed() {
-    // if () {
-    // Profile를 보고 있는 상황 + 아래로 스크롤
-    // => Feed 보여주기
-    // }
-    // else if .. 아니고, Feed가 존재하고 있다면, Feed를 숨긴다.
-  }
+  // move by scroll
+  const [frontPage, setFrontPage] = useState(<FrontPage />);
+  // move by click
+  const [backPage, setBackPage] = useState(<BackPage />);
+  // for param
+  const pageStates = {
+    frontPage,
+    setFrontPage,
+    backPage,
+    setBackPage,
+  };
 
+  // page move
   useEffect(() => {
-    window.addEventListener('wheel', toFeed);
-
+    window.addEventListener('wheel', (e) => isUp(e, pageStates));
     return () => {
-      window.removeEventListener('wheel', toFeed);
+      window.removeEventListener('wheel', isUp);
     };
   }, []);
 
-  return <div className='content'>Content</div>;
+  return (
+    <div className='content'>
+      {frontPage}
+      {backPage}
+    </div>
+  );
 }
